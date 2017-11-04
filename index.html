@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+  <div class="page-wrapper">
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <img src="" width="100" height="100">
+        <a class="logo"><img src="" alt="Sedona" width="100" height="100"></a>
         <ul class="main-menu">
-          <li class="menu menu-info">Информация</li>
-          <li class="menu menu-media">Фото и видео</li>
-          <li class="menu menu-map">Карта штата</li>
-          <li class="menu menu-hotel">Гостиницы</li>
+          <li class="menu menu-info"><a href="">Информация</a></li>
+          <li class="menu menu-media"><a href="">Фото и видео</a></li>
+          <li class="menu menu-map"><a href="">Карта штата</a></li>
+          <li class="menu menu-hotel"><a href="">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -20,64 +21,76 @@
       <section class="features">
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <ol class="feature-list">
-          <li class="feature feature-town">
-            <h3>Настоящий городок</h3>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <ul class="town-highlights">
-              <li class="highlight highlight-hotel">
-                <h3>Жилье</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
-              </li>
-              <li class="highlight highlight-food">
-                <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь! </p>
-              </li>
-              <li class="highlight highlight-souvenir">
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="feature feature-bridge">
-            <h3>Там есть мост дьявола</h3>
-            <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-          </li>
-          <li class="feature feature-square">
-            <h3>Небольшая площадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="feature feature-road">
-            <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature feature-tourist">
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ol>
+        <article class="feature pictured-feature numbered-feature">
+          <h3 class="feature-title">Настоящий городок</h3>
+          <b class="feature-number">№1</b>
+          <p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <img src="" alt="" width="100" height="100">
+        </article>
+        <article class="feature iconed-feature">
+          <h3 class="feature-title">Жилье</h3>
+          <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
+        </article>
+        <article class="feature iconed-feature">
+          <h3 class="feature-title">Еда</h3>
+          <p class="feature-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь! </p>
+        </article>
+        <article class="feature iconed-feature">
+          <h3 class="feature-title">Сувениры</h3>
+          <p class="feature-description">Не только китайского, но и местного производства!</p>
+        </article>
+        <article class="feature pictured-feature numbered-feature">
+          <h3 class="feature-title">Там есть мост дьявола</h3>
+          <b class="feature-number">№2</b>
+          <p class="feature-description">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+          <img src="" alt="" width="100" height="100">
+        </article>
+        <article class="feature numbered-feature">
+          <h3 class="feature-title">Небольшая площадь</h3>
+          <b class="feature-number">№3</b>
+          <p class="feature-description">Все достопримечательности находятся очень близко</p>
+        </article>
+        <article class="feature numbered-feature">
+          <h3 class="feature-title">Красивая дорога</h3>
+          <b class="feature-number">№4</b>
+          <p class="feature-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </article>
+        <article class="feature numbered-feature">
+          <h3 class="feature-title">Мало туристов</h3>
+          <b class="feature-number">№5</b>
+          <p class="feature-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </article>
       </section>
       <section class="booking">
         <h2>Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <div class="find-hotel">
           <p>Поиск гостиницы в Седоне</p>
-          <form>
-            <label>
-              Дата заезда<input type="date">
-            </label>
-            <label>
-              Дата выезда<input type="date">
-            </label>
-            <label>
-               Взрослые<input type="number">
-            </label>
-            <label>
-              Дети<input type="number">
-            </label>
-            <button>Найти</button>
+          <form class="form-field" method="get" action="https://echo.htmlacademy.ru/">
+            <p>
+              <label for="date-in" class="form-field-label">Дата заезда</label>
+              <input id="date-in" class="form-field-input" type="text">
+            </p>
+            <p>
+              <label for="date-out" class="form-field-label">Дата выезда</label>
+              <input id="date-out" class="form-field-input" type="text">
+            </p>
+            <p>
+              <label for="adults" class="form-field-label">Взрослые</label>
+              <button>+</button>
+              <input id="adults" class="form-field-input" type="text">
+              <button>-</button>
+            </p>
+            <p>
+              <label for="children" class="form-field-label">Дети</label>
+              <button>+</button>
+              <input id="children" class="form-field-input" type="text">
+              <button>-</button>
+            </p>
+            <button class="form-field-button">Найти</button>
           </form>
         </div>
+        <div class="map"></div>
       </section>
     </main>
     <footer class="main-footer">
@@ -86,4 +99,5 @@
       <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a></p>
     </footer>
   </body>
+  </div>
 </html>
