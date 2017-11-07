@@ -1,0 +1,21 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: auto;
+  background-color: white;
+}
+
+header {
+  background: url(img/background.jpg) no-repeat;
+}
+
+.booking {
+  background: url(img/map.jpg) no-repeat;
+}
+
+footer {
+  height: 120px;
+}
