@@ -1,21 +1,89 @@
+@font-face {
+  font-family: "PT Sans";
+  src:
+      local("PT Sans"),
+      url("../fonts/web/ptsans.woff") format("woff");
+}
+
 body {
+  font-family: "PT Sans", "Arial", sans-serif;
   background-color: #f2f2f2;
 }
 
 .page-wrapper {
   width: 1200px;
   margin: auto;
-  background-color: white;
+  background-color: #ffffff;
 }
 
-header {
-  background: url(img/background.jpg) no-repeat;
+.main-header {
+  height: 508px;
+  background: url("../img/main_text.png") no-repeat 371px 100px,
+              url("../img/shape.png") no-repeat 0 451px,
+              url("../img/background.jpg") no-repeat;
+}
+
+.main-nav {
+  height: 56px;
+  background-color: #ffffff;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu-item {
+}
+
+.menu-item:first-child {
+  margin: 0;
+}
+
+.menu-item a {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  vertical-align: middle;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.features {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.features h3 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.features p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.numbered-feature {
+  background-color: #eeeeee;
+}
+
+.pictured-feature {
+  background-color: #81b3d2;
 }
 
 .booking {
-  background: url(img/map.jpg) no-repeat;
+  background: url("../img/map.jpg") no-repeat;
 }
 
-footer {
+.main-footer {
+  display: flex;
+  justify-content: space-around;
   height: 120px;
 }
