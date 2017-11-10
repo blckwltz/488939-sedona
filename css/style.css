@@ -5,6 +5,19 @@
       url("../fonts/web/ptsans.woff") format("woff");
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   background-color: #f2f2f2;
@@ -86,4 +99,22 @@ body {
   display: flex;
   justify-content: space-around;
   height: 120px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+  list-style: none;
+}
+
+.social li {
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background-color: #81b3d2;
+}
+
+.social li:last-child {
+  margin-right: 0;
 }
