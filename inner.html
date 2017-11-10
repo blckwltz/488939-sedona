@@ -11,57 +11,59 @@
         <nav class="main-nav">
           <a class="logo" href=""><img src="img/logo.png" alt="Sedona" width="138" height="70"></a>
           <ul class="main-menu">
-            <li class="menu menu-info"><a href="">Информация</a></li>
-            <li class="menu menu-media"><a href="">Фото и видео</a></li>
-            <li class="menu menu-map"><a href="">Карта штата</a></li>
-            <li class="menu menu-hotel"><a href="">Гостиницы</a></li>
+            <li class="menu-item menu-info"><a href="file:///Users/blckwltz/Documents/GitHub/488939-sedona/index.html">Информация</a></li>
+            <li class="menu-item menu-media"><a href="">Фото и видео</a></li>
+            <li class="menu-item menu-map"><a href="">Карта штата</a></li>
+            <li class="menu-item menu-hotel"><a href="">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <section class="booking">
+          <h2 class="visually-hidden">Выбор гостиницы</h2>
           <form method="get" action="https://echo.htmlacademy.ru/">
             <fieldset>
               <legend>Инфраструктура</legend>
               <p class="form-field">
-                <input id="pool" type="checkbox" checked>
+                <input id="pool" name="pool" type="checkbox" checked>
                 <label for="pool">Бассейн</label>
               </p>
               <p class="form-field">
-                <input id="parking" type="checkbox">
+                <input id="parking" name="parking" type="checkbox">
                 <label for="parking">Парковка</label>
               </p>
               <p class="form-field">
-                <input id="wifi" type="checkbox">
+                <input id="wifi" name="wifi" type="checkbox">
                 <label for="wifi">Wi-Fi</label>
               </p>
             </fieldset>
             <fieldset>
               <legend>Тип жилья</legend>
               <p>
-                <input id="hotel" type="checkbox" checked>
+                <input id="hotel" name="hotel" type="checkbox" checked>
                 <label for="hotel">Гостиница</label>
               </p>
               <p>
-                <input id="motel" type="checkbox" checked>
+                <input id="motel" name="hotel" type="checkbox" checked>
                 <label for="motel">Мотель</label>
               </p>
               <p>
-                <input id="apartment" type="checkbox" checked>
+                <input id="apartment" name="apartment" type="checkbox" checked>
                 <label for="apartment">Апартаменты</label>
               </p>
             </fieldset>
             <fieldset>
               <legend>Стоимость в сутки(Р)</legend>
               <label for="from">От</label>
-              <input id="from" type="text" placeholder="От 0">
+              <input id="from" type="text" value="От 0">
               <label for="to">До</label>
-              <input id="to" type="text"placeholder="До 3000">
+              <input id="to" type="text" value="До 3000">
               <button>Показать</button>
             </fieldset>
           </form>
         </section>
         <section class="results">
+          <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="sorting">
             <span>Найдено: 3</span>
             <section class="sorting-criteria">

@@ -47,18 +47,10 @@ body {
   list-style: none;
 }
 
-.menu-item {
-}
-
-.menu-item:first-child {
-  margin: 0;
-}
-
 .menu-item a {
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
-  vertical-align: middle;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
