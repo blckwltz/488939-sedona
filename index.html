@@ -23,50 +23,58 @@
           <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <article class="feature pictured-feature numbered-feature">
+            <div>
             <h3 class="feature-title">Настоящий городок</h3>
-            <b class="feature-number">№1</b>
+            <span class="feature-number">- №1 -</span>
             <p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
             <img src="img/town.jpg" alt="Фотография города" width="800" height="400">
           </article>
-          <article class="feature iconed-feature">
+          <div class="feature-wrapper">
+          <article class="feature iconed-feature motel-feature">
             <h3 class="feature-title">Жилье</h3>
             <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
           </article>
-          <article class="feature iconed-feature">
+          <article class="feature iconed-feature burger-feature">
             <h3 class="feature-title">Еда</h3>
             <p class="feature-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь! </p>
           </article>
-          <article class="feature iconed-feature">
+          <article class="feature iconed-feature souvenir-feature">
             <h3 class="feature-title">Сувениры</h3>
             <p class="feature-description">Не только китайского, но и местного производства!</p>
           </article>
+        </div>
           <article class="feature pictured-feature numbered-feature">
+            <div>
             <h3 class="feature-title">Там есть мост дьявола</h3>
-            <b class="feature-number">№2</b>
+            <span class="feature-number">- №2 -</span>
             <p class="feature-description">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+          </div>
             <img src="img/bridge.jpg" alt="Фотография моста дьявола" width="800" height="400">
           </article>
+          <div class="feature-wrapper">
           <article class="feature numbered-feature">
             <h3 class="feature-title">Небольшая площадь</h3>
-            <b class="feature-number">№3</b>
+            <span class="feature-number">- №3 -</span>
             <p class="feature-description">Все достопримечательности находятся очень близко</p>
           </article>
           <article class="feature numbered-feature">
             <h3 class="feature-title">Красивая дорога</h3>
-            <b class="feature-number">№4</b>
+            <span class="feature-number">- №4 -</span>
             <p class="feature-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </article>
           <article class="feature numbered-feature">
             <h3 class="feature-title">Мало туристов</h3>
-            <b class="feature-number">№5</b>
+            <span class="feature-number">- №5 -</span>
             <p class="feature-description">Большинство едет в Гранд Каньон и толпится там</p>
           </article>
+        </div>
         </section>
         <section class="booking">
           <h2>Заинтересовались?</h2>
           <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <div class="find-hotel">
-            <p>Поиск гостиницы в Седоне</p>
+          <fieldset class="find-hotel">
+            <legend>Поиск гостиницы в Седоне</legend>
             <form class="form-field" method="get" action="https://echo.htmlacademy.ru/">
               <p>
                 <label for="date-in" class="form-field-label">Дата заезда</label>
@@ -90,17 +98,17 @@
               </p>
               <button class="form-field-button">Найти</button>
             </form>
-          </div>
+          </fieldset>
         </section>
       </main>
       <footer class="main-footer">
-        <p>#visitsedona</p>
-        <ul class="social">
-          <li class="social-tw"><a href="" class="hide-text">Twitter</a></li>
-          <li class="social-fb"><a href="" class="hide-text">Facebook</a></li>
-          <li class="social-yt"><a href="" class="hide-text">Youtube</a></li>
-        </ul>
-        <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a></p>
+        <p class="visit">#visitsedona</p>
+        <section class="social">
+          <a href="" class="social-tw"><p class="visually-hidden">Twitter</p></a>
+          <a href="" class="social-fb"><p class="visually-hidden">Facebook</p></a>
+          <a href="" class="social-yt"><p class="visually-hidden">Youtube</p></a>
+        </section>
+        <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss"><span class="academy-logo visually-hidden">htmlacademy</span></a></p>
       </footer>
     </div>
   </body>
