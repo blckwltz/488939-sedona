@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="page-wrapper">
@@ -11,104 +12,104 @@
         <nav class="main-nav">
           <a class="logo"><img src="img/logo.png" alt="Sedona" width="138" height="70"></a>
           <ul class="main-menu">
-            <li class="menu-item menu-info"><a href="">Информация</a></li>
-            <li class="menu-item menu-media"><a href="">Фото и видео</a></li>
-            <li class="menu-item menu-map"><a href="">Карта штата</a></li>
-            <li class="menu-item menu-hotel"><a href="inner.html">Гостиницы</a></li>
+            <li class="menu-item"><a href="">Информация</a></li>
+            <li class="menu-item"><a href="">Фото и видео</a></li>
+            <li class="menu-item"><a href="">Карта штата</a></li>
+            <li class="menu-item"><a href="inner.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <main>
+        <section class="photo">
+          <img src="img/welcome.png" alt="Sedona" width="458" height="352">
+        </section>
         <section class="features">
           <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-          <article class="feature pictured-feature numbered-feature">
-            <div>
-            <h3 class="feature-title">Настоящий городок</h3>
-            <span class="feature-number">- №1 -</span>
+          <figure class="feature pictured-feature numbered-feature">
+            <figcaption class="feature-title">Настоящий городок</figcaption>
+            <span class="feature-number">&mdash; №1 &mdash;</span>
             <p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
             <img src="img/town.jpg" alt="Фотография города" width="800" height="400">
-          </article>
-          <div class="feature-wrapper">
-          <article class="feature iconed-feature motel-feature">
-            <h3 class="feature-title">Жилье</h3>
+          </figure>
+          <figure class="feature iconed-feature motel-feature">
+            <figcaption class="feature-title">Жилье</figcaption>
             <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
-          </article>
-          <article class="feature iconed-feature burger-feature">
-            <h3 class="feature-title">Еда</h3>
+          </figure>
+          <figure class="feature iconed-feature burger-feature">
+            <figcaption class="feature-title">Еда</figcaption>
             <p class="feature-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь! </p>
-          </article>
-          <article class="feature iconed-feature souvenir-feature">
-            <h3 class="feature-title">Сувениры</h3>
+          </figure>
+          <figure class="feature iconed-feature souvenir-feature">
+            <figcaption class="feature-title">Сувениры</figcaption>
             <p class="feature-description">Не только китайского, но и местного производства!</p>
-          </article>
-        </div>
-          <article class="feature pictured-feature numbered-feature">
-            <div>
-            <h3 class="feature-title">Там есть мост дьявола</h3>
-            <span class="feature-number">- №2 -</span>
+          </figure>
+          <figure class="feature pictured-feature numbered-feature">
+            <figcaption class="feature-title">Там есть мост дьявола</figcaption>
+            <span class="feature-number">&mdash; №2 &mdash;</span>
             <p class="feature-description">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-          </div>
             <img src="img/bridge.jpg" alt="Фотография моста дьявола" width="800" height="400">
-          </article>
+          </figure>
           <div class="feature-wrapper">
-          <article class="feature numbered-feature">
-            <h3 class="feature-title">Небольшая площадь</h3>
-            <span class="feature-number">- №3 -</span>
+          <figure class="feature numbered-feature">
+            <figcaption class="feature-title">Небольшая площадь</figcaption>
+            <span class="feature-number">&mdash; №3 &mdash;</span>
             <p class="feature-description">Все достопримечательности находятся очень близко</p>
-          </article>
-          <article class="feature numbered-feature">
-            <h3 class="feature-title">Красивая дорога</h3>
-            <span class="feature-number">- №4 -</span>
+          </figure>
+          <figure class="feature numbered-feature">
+            <figcaption class="feature-title">Красивая дорога</figcaption>
+            <span class="feature-number">&mdash; №4 &mdash;</span>
             <p class="feature-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </article>
-          <article class="feature numbered-feature">
-            <h3 class="feature-title">Мало туристов</h3>
-            <span class="feature-number">- №5 -</span>
+          </figure>
+          <figure class="feature numbered-feature">
+            <figcaption class="feature-title">Мало туристов</figcaption>
+            <span class="feature-number">&mdash; №5 &mdash;</span>
             <p class="feature-description">Большинство едет в Гранд Каньон и толпится там</p>
-          </article>
+          </figure>
         </div>
         </section>
         <section class="booking">
           <h2>Заинтересовались?</h2>
           <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <fieldset class="find-hotel">
-            <legend>Поиск гостиницы в Седоне</legend>
-            <form class="form-field" method="get" action="https://echo.htmlacademy.ru/">
-              <p>
-                <label for="date-in" class="form-field-label">Дата заезда</label>
-                <input id="date-in" name="date-in" class="form-field-input" type="text" value="24 апреля 2017">
-              </p>
-              <p>
-                <label for="date-out" class="form-field-label">Дата выезда</label>
-                <input id="date-out" name="date-out" class="form-field-input" type="text" value="4 июля 2017">
-              </p>
-              <p>
-                <label for="adults" class="form-field-label">Взрослые</label>
-                <button>+</button>
-                <input id="adults" name="adults" class="form-field-input" type="text" value="2">
-                <button>-</button>
-              </p>
-              <p>
-                <label for="children" class="form-field-label">Дети</label>
-                <button>+</button>
-                <input id="children" name="children" class="form-field-input" type="text" value="0">
-                <button>-</button>
-              </p>
-              <button class="form-field-button">Найти</button>
-            </form>
-          </fieldset>
+          <a href=""><p class="find-hotel">Поиск гостиницы в Седоне</p></a>
+          <form class="form-field" method="get" action="https://echo.htmlacademy.ru/">
+            <p>
+              <label for="date-in" class="form-field-label">Дата заезда</label>
+              <input id="date-in" name="date-in" class="form-field-input" type="text" value="24 апреля 2017">
+              <span class="calendar"><img src="img/calendar.svg" alt="Calendar"></span>
+            </p>
+            <p>
+              <label for="date-out" class="form-field-label">Дата выезда</label>
+              <input id="date-out" name="date-out" class="form-field-input" type="text" value="4 июля 2017">
+              <span class="calendar"><img src="img/calendar.svg" alt="Calendar"></span>
+            </p>
+            <p>
+              <label for="adults" class="form-field-label">Взрослые</label>
+              <button class="adjust-button">-</button>
+              <input id="adults" name="adults" class="form-field-input" type="text" value="2">
+              <button class="adjust-button">+</button>
+            </p>
+            <p>
+              <label for="children" class="form-field-label">Дети</label>
+              <button class="adjust-button">-</button>
+              <input id="children" name="children" class="form-field-input" type="text" value="0">
+              <button class="adjust-button">+</button>
+            </p>
+            <button class="form-field-button">Найти</button>
+          </form>
+        </section>
+        <section class="map">
+          <img src="img/map.jpg" alt="Map" width="1280" height="747">
         </section>
       </main>
       <footer class="main-footer">
         <p class="visit">#visitsedona</p>
         <section class="social">
-          <a href="" class="social-tw"><p class="visually-hidden">Twitter</p></a>
-          <a href="" class="social-fb"><p class="visually-hidden">Facebook</p></a>
-          <a href="" class="social-yt"><p class="visually-hidden">Youtube</p></a>
+          <a href="" class="social-tw hide-text">Twitter</a>
+          <a href="" class="social-fb hide-text">Facebook</a>
+          <a href="" class="social-yt hide-text">Youtube</a>
         </section>
-        <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss"><span class="academy-logo visually-hidden">htmlacademy</span></a></p>
+        <p class="academy-link">website by<a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo hide-text">htmlacademy</a></p>
       </footer>
     </div>
   </body>

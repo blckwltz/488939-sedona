@@ -18,33 +18,33 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <section class="booking">
+      <main class="inner">
+        <section class="booking-inner">
           <h2 class="visually-hidden">Выбор гостиницы</h2>
-          <form method="get" action="https://echo.htmlacademy.ru/">
-            <fieldset>
+          <form class="form-field-inner" method="get" action="https://echo.htmlacademy.ru/">
+            <fieldset class="form-field-set">
               <legend>Инфраструктура</legend>
-              <p class="form-field">
+              <p>
                 <input id="pool" name="pool" type="checkbox" checked>
                 <label for="pool">Бассейн</label>
               </p>
-              <p class="form-field">
+              <p>
                 <input id="parking" name="parking" type="checkbox">
                 <label for="parking">Парковка</label>
               </p>
-              <p class="form-field">
+              <p>
                 <input id="wifi" name="wifi" type="checkbox">
                 <label for="wifi">Wi-Fi</label>
               </p>
             </fieldset>
-            <fieldset>
+            <fieldset class="form-field-set">
               <legend>Тип жилья</legend>
               <p>
                 <input id="hotel" name="hotel" type="checkbox" checked>
                 <label for="hotel">Гостиница</label>
               </p>
               <p>
-                <input id="motel" name="hotel" type="checkbox" checked>
+                <input id="motel" name="motel" type="checkbox" checked>
                 <label for="motel">Мотель</label>
               </p>
               <p>
@@ -52,11 +52,11 @@
                 <label for="apartment">Апартаменты</label>
               </p>
             </fieldset>
-            <fieldset>
+            <fieldset class="form-field-set">
               <legend>Стоимость в сутки(Р)</legend>
-              <label for="from">От</label>
+              <label for="from" class="visually-hidden">От</label>
               <input id="from" type="text" value="От 0">
-              <label for="to">До</label>
+              <label for="to" class="visually-hidden">До</label>
               <input id="to" type="text" value="До 3000">
               <button>Показать</button>
             </fieldset>
@@ -64,61 +64,61 @@
         </section>
         <section class="results">
           <h2 class="visually-hidden">Результаты поиска</h2>
-          <div class="sorting">
-            <span>Найдено: 3</span>
-            <section class="sorting-criteria">
-              <h3>Сортировка</h3>
-              <ul>
-                <li><a>По цене</a></li>
-                <li><a href="">По типу</a></li>
-                <li><a href="">По рейтингу</a></li>
+          <section class="sorting">
+            <h2>Найдено: 3</h2>
+            <section class="sorting-data">
+              <span>Сортировка</span>
+              <ul class="sorting-filter">
+                <li><a class="sorting-criteria">По цене</a></li>
+                <li><a href="" class="sorting-criteria">По типу</a></li>
+                <li><a href="" class="sorting-criteria">По рейтингу</a></li>
               </ul>
               <a class="hide-text">По возрастанию</a>
               <a class="hide-text" href="">По убыванию</a>
             </section>
-          </div>
+          </section>
         </section>
         <section class="sorting-images">
           <div>
             <img src="img/amara.jpg" alt="Amara Resort and Spa" width="135" height="90">
-            <h2>Amara Resort and Spa</h2>
+            <h2 class="sorting-name"><a href="">Amara Resort and Spa</a></h2>
             <span>Гостиница</span>
             <span>От 4000 р.</span>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <a href="" class="sorting-details">Подробнее</a>
+            <a href="" class="sorting-get">Забронировать</a>
             <span class="stars stars-4 hide-text">4 звезды</span>
-            <span class="rating">Рейтинг: 8,5</span>
+            <span class="sorting-rating">Рейтинг: 8,5</span>
           </div>
           <div>
             <img src="img/quail.jpg" alt="Desert Quail Inn" width="135" height="90">
-            <h2>Desert Quail Inn</h2>
+            <h2 class="sorting-name"><a href="">Desert Quail Inn</a></h2>
             <span>Мотель</span>
             <span>От 3000 р.</span>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <a href="" class="sorting-details">Подробнее</a>
+            <a href="" class="sorting-get">Забронировать</a>
             <span class="stars stars-3 hide-text">3 звезды</span>
-            <span class="rating">Рейтинг: 8,9</span>
+            <span class="sorting-rating">Рейтинг: 8,9</span>
           </div>
           <div>
             <img src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
-            <h2>Villas at Poco Diablo</h2>
+            <h2 class="sorting-name"><a href="">Villas at Poco Diablo</a></h2>
             <span>Апартаменты</span>
             <span>От 2000 р.</span>
-            <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <a href="" class="sorting-details">Подробнее</a>
+            <a href="" class="sorting-get">Забронировать</a>
             <span class="stars stars-2 hide-text">2 звезды</span>
-            <span class="rating">Рейтинг: 9,2</span>
+            <span class="sorting-rating">Рейтинг: 9,2</span>
           </div>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer inner-footer">
         <p class="visit">#visitsedona</p>
         <section class="social">
-          <a href="" class="social-tw"><p class="visually-hidden">Twitter</p></a>
-          <a href="" class="social-fb"><p class="visually-hidden">Facebook</p></a>
-          <a href="" class="social-yt"><p class="visually-hidden">Youtube</p></a>
+          <a href="" class="social-tw hide-text">Twitter</a>
+          <a href="" class="social-fb hide-text">Facebook</a>
+          <a href="" class="social-yt hide-text">Youtube</a>
         </section>
-        <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss"><span class="academy-logo visually-hidden">htmlacademy</span></a></p>
+        <p class="academy-link">website by<a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo hide-text">htmlacademy</a></p>
       </footer>
     </div>
   </body>
