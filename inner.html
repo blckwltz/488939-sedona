@@ -53,11 +53,13 @@
               </p>
             </fieldset>
             <fieldset class="form-field-set">
-              <legend>Стоимость в сутки(Р)</legend>
+              <legend>Стоимость в сутки(Р):</legend>
               <label for="from" class="visually-hidden">От</label>
-              <input id="from" type="text" value="От 0">
               <label for="to" class="visually-hidden">До</label>
-              <input id="to" type="text" value="До 3000">
+              <div>
+                <input id="from" name="from" type="text" value="От 0">
+                <input id="to" name="to" type="text" value="До 3000">
+              </div>
               <button>Показать</button>
             </fieldset>
           </form>
@@ -65,17 +67,19 @@
         <section class="results">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <section class="sorting">
+            <div class="sorting-wrapper">
             <h2>Найдено: 3</h2>
-            <section class="sorting-data">
-              <span>Сортировка</span>
-              <ul class="sorting-filter">
-                <li><a class="sorting-criteria">По цене</a></li>
-                <li><a href="" class="sorting-criteria">По типу</a></li>
-                <li><a href="" class="sorting-criteria">По рейтингу</a></li>
-              </ul>
-              <a class="hide-text">По возрастанию</a>
-              <a class="hide-text" href="">По убыванию</a>
-            </section>
+            <span>Сортировка:</span>
+            <!--  <ul class="sorting-filter"> -->
+                <span><a class="sorting-criteria">По цене</a></span>
+                <span><a href="" class="sorting-criteria">По типу</a></span>
+                <span><a href="" class="sorting-criteria">По рейтингу</a></span>
+              <!-- </ul> -->
+            </div>
+            <div class="sorting-navigation">
+              <a class="arrow arrow-up hide-text">По возрастанию</a>
+              <a class="arrow arrow-down hide-text" href="">По убыванию</a>
+            </div>
           </section>
         </section>
         <section class="sorting-images">
@@ -112,13 +116,18 @@
         </section>
       </main>
       <footer class="main-footer inner-footer">
-        <p class="visit">#visitsedona</p>
+        <section class="visit">
+          <span>#visitsedona</span>
+        </section>
         <section class="social">
           <a href="" class="social-tw hide-text">Twitter</a>
           <a href="" class="social-fb hide-text">Facebook</a>
           <a href="" class="social-yt hide-text">Youtube</a>
         </section>
-        <p class="academy-link">website by<a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo hide-text">htmlacademy</a></p>
+        <section class="academy">
+          <p class="academy-link">website by</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo hide-text">htmlacademy</a>
+        </section>
       </footer>
     </div>
   </body>
