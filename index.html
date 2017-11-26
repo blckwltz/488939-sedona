@@ -12,9 +12,9 @@
         <nav class="main-nav">
           <a class="logo"><img src="img/logo.png" alt="Sedona" width="138" height="70"></a>
           <ul class="main-menu">
-            <li class="menu-item"><a href="">Информация</a></li>
-            <li class="menu-item"><a href="">Фото и видео</a></li>
-            <li class="menu-item"><a href="">Карта штата</a></li>
+            <li class="menu-item"><a href="info.html">Информация</a></li>
+            <li class="menu-item"><a href="media.html">Фото и видео</a></li>
+            <li class="menu-item"><a href="map.html">Карта штата</a></li>
             <li class="menu-item"><a href="inner.html">Гостиницы</a></li>
           </ul>
         </nav>
@@ -71,27 +71,27 @@
         <section class="booking">
           <h2>Заинтересовались?</h2>
           <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <a href=""><span class="find-hotel">Поиск гостиницы в Седоне</span></a>
+          <a href="#"><span class="find-hotel">Поиск гостиницы в Седоне</span></a>
           <form class="form-field" method="get" action="https://echo.htmlacademy.ru/">
             <p>
               <label for="date-in" class="form-field-label">Дата заезда:</label>
               <input id="date-in" name="date-in" class="form-field-input" type="text" value="24 апреля 2017">
-              <span class="calendar"><img src="img/calendar.svg" alt="Calendar"></span>
+              <button type="button" class="calendar-button"></button>
             </p>
             <p>
               <label for="date-out" class="form-field-label">Дата выезда:</label>
               <input id="date-out" name="date-out" class="form-field-input" type="text" value="4 июля 2017">
-              <span class="calendar"><img src="img/calendar.svg" alt="Calendar"></span>
+              <button type="button" class="calendar-button"></button>
             </p>
             <p>
               <label for="adults" class="form-field-label">Взрослые:</label>
-              <button class="adjust-button">-</button>
+              <button type="button" class="adjust-button">-</button>
               <input id="adults" name="adults" class="form-field-input" type="text" value="2">
-              <button class="adjust-button">+</button>
+              <button type="button" class="adjust-button">+</button>
               <label for="children" class="form-field-label">Дети:</label>
-              <button class="adjust-button">-</button>
+              <button type="button" class="adjust-button">-</button>
               <input id="children" name="children" class="form-field-input" type="text" value="0">
-              <button class="adjust-button">+</button>
+              <button type="button" class="adjust-button">+</button>
             </p>
             <button class="form-field-button">Найти</button>
           </form>
