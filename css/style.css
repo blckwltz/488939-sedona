@@ -55,6 +55,7 @@ a {
   padding: 0;
   margin: auto;
   background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 #cccccc;
 }
 
 .main-header {
@@ -132,7 +133,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 77px;
-  padding-bottom: 72px;
+  padding-bottom: 80px;
   background-image:
     url("../img/shape.png"),
     url("../img/background.jpg");
@@ -145,6 +146,7 @@ a {
   background-size:
     100% auto,
     100%;
+  background-color: #abbac5;
 }
 
 .features {
@@ -153,6 +155,7 @@ a {
   flex-wrap: wrap;
   justify-content: flex-start;
   text-align: center;
+  counter-reset: features;
 }
 
 .features div {
@@ -177,20 +180,28 @@ a {
 }
 
 .feature {
-  padding: 50px 60px 40px;
+  padding: 50px 6% 40px;
   margin: 0;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 20%;
 }
 
-.feature-number {
-  padding: 0;
-  padding-bottom: 30px;
+.numbered-feature {
+  position: relative;
+  background-color: #eeeeee;
 }
 
-.numbered-feature {
-  background-color: #eeeeee;
+.numbered-feature::before {
+  display: block;
+  position: absolute;
+  top: 95px;
+  left: 175px;
+  counter-increment: features;
+  content: '— № ' counter(features) ' —';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
 }
 
 .pictured-feature {
@@ -246,22 +257,24 @@ a {
 }
 
 .feature-title {
+  padding: 0;
+  margin-bottom: 65px;
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 21px;
+}
+
+.iconed-feature .feature-title {
+  margin-bottom: 20px;
 }
 
 .feature-description {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 26px;
-  color: #333333;
-}
-
-.feature-number {
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
+  color: #333333;
 }
 
 .booking {
@@ -275,12 +288,18 @@ a {
 }
 
 .booking h2 {
+  padding: 0;
+  padding-bottom: 28px;
+  margin: 0;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
 }
 
 .booking p {
+  padding: 0;
+  padding-bottom: 49px;
+  margin: 0;
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
@@ -290,7 +309,6 @@ a {
   display: block;
   width: 290px;
   padding: 30px 139px;
-  margin-top: 55px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -394,19 +412,19 @@ a {
   width: 38px;
   height: 38px;
   margin: 0;
-  background: url("../img/calendar.png") no-repeat center;
+  background: url("../img/calendar.svg") no-repeat center;
   background-color: #f2f2f2;
   border: 0;
   border-radius: 0;
 }
 
 .calendar-button:hover {
-  background: url("../img/calendar-hover.png") no-repeat center;
+  background: url("../img/calendar-hover.svg") no-repeat center;
   background-color: #f2f2f2;
 }
 
 .calendar-button:active {
-  background: url("../img/calendar-active.png") no-repeat center;
+  background: url("../img/calendar-active.svg") no-repeat center;
   background-color: #f2f2f2;
 }
 
@@ -530,17 +548,17 @@ a {
   background: url("../img/yt-icon.svg") no-repeat center;
 }
 
-/*.social-tw:active {
-  background: url("../img/tw-icon-active.png") no-repeat center;
+.social-tw:active {
+  background: url("../img/tw-icon-active.svg") no-repeat center;
 }
 
 .social-fb:active {
-  background: url("../img/fb-icon-active.png") no-repeat center;
+  background: url("../img/fb-icon-active.svg") no-repeat center;
 }
 
 .social-yt:active {
-  background: url("../img/yt-icon-active.png") no-repeat center;
-}*/
+  background: url("../img/yt-icon-active.svg") no-repeat center;
+}
 
 .academy {
   display: flex;
@@ -561,15 +579,15 @@ a {
   display: inline-block;
   width: 115px;
   height: 41px;
-  background: url("../img/academy-logo.png") no-repeat center;
+  background: url("../img/academy-logo.svg") no-repeat center;
 }
 
 .academy-logo:hover {
-  background: url("../img/academy-logo-hover.png") no-repeat center;
+  background: url("../img/academy-logo-hover.svg") no-repeat center;
 }
 
 .academy-logo:active {
-  background: url("../img/academy-logo-active.png") no-repeat center;
+  background: url("../img/academy-logo-active.svg") no-repeat center;
 }
 
 .inner {
@@ -649,8 +667,16 @@ a {
   background: url("../img/checkbox-off.svg") no-repeat;
 }
 
-.checkbox:checked ~ .checkbox-label::before {
+.checkbox:checked + .checkbox-label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.checkbox:disabled + .checkbox-label::before {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
+
+.checkbox:checked:disabled + .checkbox-label::before {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
 }
 
 .form-field-filter {
@@ -781,8 +807,7 @@ a {
 }
 
 .sorting-wrapper {
-  width: 600px;
-  margin-right: 350px;
+  min-width: 528px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -795,7 +820,7 @@ a {
   color: #000000;
 }
 
-.sorting-wrapper span {
+.sorting-wrapper div {
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
@@ -822,37 +847,43 @@ a {
 
 .sorting-navigation {
   width: 50px;
-  padding-top: 15px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
+.arrow {
+  width: 11px;
+  height: 11px;
+}
+
 .arrow-up {
-  background: url("../img/arrow-up.png") no-repeat;
+  margin-right: 12px;
+  background: url("../img/arrow-up.svg") no-repeat;
 }
 
 .arrow-up:hover {
-  background: url("../img/arrow-up-hover.png") no-repeat;
+  background: url("../img/arrow-up-hover.svg") no-repeat;
 }
 
 .arrow-up:active {
-  background: url("../img/arrow-up-active.png") no-repeat;
+  background: url("../img/arrow-up-active.svg") no-repeat;
 }
 
 .arrow-down {
-  background: url("../img/arrow-down.png") no-repeat;
+  background: url("../img/arrow-down.svg") no-repeat;
 }
 
 .arrow-down:hover {
-  background: url("../img/arrow-down-hover.png") no-repeat;
+  background: url("../img/arrow-down-hover.svg") no-repeat;
 }
 
 .arrow-down:active {
-  background: url("../img/arrow-down-active.png") no-repeat;
+  background: url("../img/arrow-down-active.svg") no-repeat;
 }
 
 .arrow:not([href="#"]) {
-  background: url("../img/arrow-down-active.png") no-repeat;
+  background: url("../img/arrow-down-active.svg") no-repeat;
 }
 
 .sorting-hotel {
@@ -953,27 +984,23 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+.stars {
+  background: url("../img/star.svg") space;
 }
 
 .stars-2 {
-  background:
-    url("../img/star.svg") no-repeat 72px center,
-    url("../img/star.svg") no-repeat right center;
+  width: 40px;
 }
 
 .stars-3 {
-  background:
-    url("../img/star.svg") no-repeat 49px center,
-    url("../img/star.svg") no-repeat 72px center,
-    url("../img/star.svg") no-repeat right center;
+  width: 65px;
 }
 
 .stars-4 {
-  background:
-    url("../img/star.svg") no-repeat 26px center,
-    url("../img/star.svg") no-repeat 49px center,
-    url("../img/star.svg") no-repeat 72px center,
-    url("../img/star.svg") no-repeat right center;
+  width: 89px;
 }
 
 .hotel-score {
