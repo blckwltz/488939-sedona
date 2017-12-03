@@ -3,13 +3,15 @@
   src:
       local("PT Sans"), local("PTSans-Regular")
       url("../fonts/web/ptsans.woff2") format("woff2");
+      font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
   src:
-      local("PT Sans"), local("PTSans-Bold")
-      url("../fonts/web/ptsansbold.woff2") format("woff2");
+      local("PT Sans"), local("PTSans-700")
+      url("../fonts/web/ptsans700.woff2") format("woff2");
+      font-weight: 700;
 }
 
 .visually-hidden {
@@ -33,11 +35,11 @@
 
 body {
   padding: 0;
-  margin: 0 auto;
+  margin: auto;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
   background-color: #f2f2f2;
@@ -61,9 +63,14 @@ a {
 .main-header {
   width: 100%;
   min-height: 56px;
+  padding-left: 6%;
+  padding-right: 6%;
+  box-sizing: border-box;
 }
 
 .main-nav {
+  position: relative;
+  padding-top: 14px;
   background-color: #ffffff;
 }
 
@@ -71,6 +78,7 @@ a {
   width: 138px;
   height: 70px;
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -79,14 +87,12 @@ a {
 
 .main-menu {
   width: 100%;
-  position: absolute;
   display: flex;
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
-  padding-left: 6%;
-  padding-right: 6%;
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -109,7 +115,7 @@ a {
 
 .menu-item a {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
   color: #000000;
   text-decoration: none;
@@ -129,11 +135,13 @@ a {
 
 .photo {
   width: 100%;
+  min-height: 508px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 77px;
-  padding-bottom: 80px;
+  /*padding-top: 77px;
+  padding-bottom: 80px;*/
+  background-color: #abbac5;
   background-image:
     url("../img/shape.png"),
     url("../img/background.jpg");
@@ -142,11 +150,10 @@ a {
     no-repeat;
   background-position:
     0 bottom,
-    0 -55px;
+    0 28%;
   background-size:
     100% auto,
     100%;
-  background-color: #abbac5;
 }
 
 .features {
@@ -160,27 +167,33 @@ a {
 
 .features div {
   padding: 0;
-  padding-top: 39px;
+  padding-top: 60px;
   padding-bottom: 50px;
   margin: auto;
 }
 
 .features h3 {
   padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
 }
 
 .features p {
   padding: 0;
+  margin: 0;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 26px;
 }
 
 .feature {
-  padding: 50px 6% 40px;
+  min-height: 206px;
+  padding-top: 50px;
+  padding-left: 6%;
+  padding-right: 6%;
   margin: 0;
   flex-grow: 1;
   flex-shrink: 1;
@@ -188,20 +201,18 @@ a {
 }
 
 .numbered-feature {
-  position: relative;
   background-color: #eeeeee;
 }
 
-.numbered-feature::before {
+.numbered-feature .feature-title::after {
   display: block;
-  position: absolute;
-  top: 95px;
-  left: 175px;
   counter-increment: features;
-  content: '— № ' counter(features) ' —';
+  content: '— №' counter(features) ' —';
+  padding-top: 30px;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
+  vertical-align: middle;
 }
 
 .pictured-feature {
@@ -225,7 +236,7 @@ a {
 }
 
 .pictured-feature img {
-  width: 67%;
+  width: 66%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -241,7 +252,8 @@ a {
 }
 
 .iconed-feature {
-  padding-top: 165px;
+  min-height: 168px;
+  padding-top: 163px;
 }
 
 .motel-feature {
@@ -258,9 +270,9 @@ a {
 
 .feature-title {
   padding: 0;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
 }
 
@@ -272,7 +284,7 @@ a {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   color: #333333;
 }
@@ -280,7 +292,7 @@ a {
 .booking {
   position: relative;
   width: 100%;
-  padding-top: 55px;
+  padding-top: 52px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -289,19 +301,19 @@ a {
 
 .booking h2 {
   padding: 0;
-  padding-bottom: 28px;
   margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 36px;
 }
 
 .booking p {
   padding: 0;
-  padding-bottom: 49px;
   margin: 0;
+  margin-bottom: 68px;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 24px;
 }
 
@@ -310,7 +322,7 @@ a {
   width: 290px;
   padding: 30px 139px;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   color: #ffffff;
   background-color: #766357;
@@ -332,7 +344,24 @@ a {
   top: 100%;
   margin: auto;
   padding: 55px;
+  z-index: 1;
   background-color: #ffffff;
+}
+
+/*@keyframes open {
+  from {
+    transform: translateX(-1000px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}*/
+
+.form-field-hide {
+  display: none;
+  /*animation-name: open;
+  animation-duration: 1s;*/
 }
 
 .form-field p {
@@ -346,31 +375,31 @@ a {
 }
 
 .form-field p:last-of-type {
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .form-field-label {
   padding: 0;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
 }
 
 .form-field-label[for="date-in"] {
-  padding-right: 23px;
+  margin-right: 23px;
 }
 
 .form-field-label[for="date-out"] {
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 .form-field-label[for="adults"] {
-  padding-right: 41px;
+  margin-right: 41px;
 }
 
 .form-field-label[for="children"] {
-  padding-left: 53px;
-  padding-right: 27px;
+  margin-left: 53px;
+  margin-right: 27px;
 }
 
 
@@ -380,7 +409,7 @@ a {
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
@@ -411,6 +440,7 @@ a {
 .calendar-button {
   width: 38px;
   height: 38px;
+  padding: 0;
   margin: 0;
   background: url("../img/calendar.svg") no-repeat center;
   background-color: #f2f2f2;
@@ -434,8 +464,8 @@ a {
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: bold;
-  line-height: 26px;
+  font-weight: 700;
+  line-height: 21px;
   text-transform: uppercase;
   color: #a9a9a9;
   background-color: #f2f2f2;
@@ -454,8 +484,9 @@ a {
 .form-field-button {
   width: 458px;
   height: 58px;
+  padding: 0;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
@@ -474,12 +505,19 @@ a {
 }
 
 .map {
+  position: relative;
   width: 100%;
+  height: 592px;
   overflow: hidden;
 }
 
+.map-interactive {
+  height: 592px;
+}
+
 .map img {
-  height: 593px;
+  position: absolute;
+  height: 592px;
   object-fit: cover;
   object-position: -40px -150px;
 }
@@ -504,7 +542,7 @@ a {
   display: flex;
   justify-content: center;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
 }
 
@@ -513,6 +551,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   padding: 0;
+  padding-left: 6px;
   list-style: none;
 }
 
@@ -565,12 +604,13 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0;
+  padding-left: 5px;
 }
 
 .academy-link {
   display: inline-block;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 26px;
   margin-right: 8px;
 }
@@ -597,15 +637,17 @@ a {
   position: relative;
   width: 100%;
   min-height: 165px;
-  padding-top: 32px;
-  padding-bottom: 20px;
+  padding-top: 28px;
+  padding-bottom: 7px;
   padding-left: 6%;
   padding-right: 6%;
   box-sizing: border-box;
   overflow: hidden;
+  background: url("../img/background-filter.jpg") no-repeat center;
+  background-size: cover;
 }
 
-.booking-inner::before {
+/*.booking-inner::before {
   content: "";
   position: absolute;
   top: 0;
@@ -614,15 +656,11 @@ a {
   bottom: 0;
   background: url("../img/background.jpg") no-repeat 0 -260px;
   filter: blur(15px);
-}
+}*/
 
 .form-field-inner {
   display: flex;
   justify-content: space-between;
-}
-
-.form-field-inner div {
-  z-index: 1;
 }
 
 .form-field-inner .form-field-set,
@@ -631,22 +669,38 @@ a {
   vertical-align: top;
 }
 
+.form-field-set-wrapper {
+  width: 528px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 .form-field-set {
+  padding: 0;
+  margin: 0;
   border: 0;
 }
 
+.form-field-set:first-of-type {
+  margin-right: 120px;
+}
+
 .form-field-set legend {
+  padding: 0;
+  margin-bottom: 9px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
   color: #ffffff;
 }
 
 .form-field-set label {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .form-field-set .checkbox {
@@ -654,8 +708,11 @@ a {
 }
 
 .form-field-set .checkbox-label {
+  display: inline-block;
   position: relative;
   padding-left: 40px;
+  margin-bottom: 11px;
+  vertical-align: middle;
 }
 
 .form-field-set .checkbox-label::before {
@@ -687,9 +744,10 @@ a {
 .filter-title {
   display: block;
   margin: 0;
+  margin-left: 3px;
   margin-bottom: 10px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
   color: #ffffff;
 }
@@ -718,7 +776,7 @@ a {
 .form-field-filter label {
   display: inline-block;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   color: #ffffff;
   vertical-align: top;
@@ -726,8 +784,8 @@ a {
 
 .price-controls .from,
 .price-controls .to {
-  width: 90px;
-  padding-left: 60px;
+  width: 80px;
+  padding-left: 21%;
 }
 
 .price-controls input {
@@ -735,7 +793,7 @@ a {
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   color: #ffffff;
   background-color: transparent;
@@ -744,7 +802,7 @@ a {
 
 .range-controls {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .range-controls .scale {
@@ -764,6 +822,7 @@ a {
   width: 20px;
   height: 23px;
   background: url("../img/filter-button.svg") no-repeat center;
+  cursor: pointer;
 }
 
 .range-toggle:hover {
@@ -780,11 +839,11 @@ a {
 
 .form-field-filter button {
   display: block;
-  margin: 0 auto;
-  padding: 5px 30px;
+  margin-left: 86px;
+  padding: 5px 33px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
   border: 2px solid #ffffff;
@@ -815,14 +874,14 @@ a {
 
 .sorting-wrapper h2 {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   color: #000000;
 }
 
 .sorting-wrapper div {
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
 }
 
@@ -846,7 +905,7 @@ a {
 }
 
 .sorting-navigation {
-  width: 50px;
+  flex-shrink: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -907,7 +966,6 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
   flex-basis: auto;
   flex-grow: 1;
   flex-shrink: 1;
@@ -915,7 +973,7 @@ a {
 
 .hotel-name {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 26px;
   color: #000000;
 }
@@ -928,22 +986,30 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hotel-info span {
+.hotel-type {
+  width: 180px;
+  margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-type span {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   color: #333333
 }
 
-.hotel-type span:first-child {
+/*.hotel-type span:first-child {
   margin-right: 20px;
-}
+}*/
 
 .hotel-details {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 3px 16px;
+  margin-right: 5px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
   vertical-align: middle;
   color: #ffffff;
@@ -961,9 +1027,9 @@ a {
 
 .hotel-get {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 3px 16px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 21px;
   vertical-align: middle;
   color: #ffffff;
@@ -1006,7 +1072,7 @@ a {
 .hotel-score {
   padding: 5px 15px;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 21px;
   color: #666666;
   background-color: #f2f2f2;
