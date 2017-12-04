@@ -63,8 +63,6 @@ a {
 .main-header {
   width: 100%;
   min-height: 56px;
-  padding-left: 6%;
-  padding-right: 6%;
   box-sizing: border-box;
 }
 
@@ -88,7 +86,6 @@ a {
 .main-menu {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
   padding: 0;
@@ -101,6 +98,18 @@ a {
   flex-shrink: 0;
   padding: 0;
   margin: 0;
+}
+
+.menu-item:nth-child(4n) {
+  margin-right: 6%;
+}
+
+.menu-item:nth-child(4n+1) {
+  margin-left: 6%;
+}
+
+.menu-item:nth-child(4n+2) {
+  margin-right: 8%;
 }
 
 .menu-item:nth-child(4n+1),
@@ -190,8 +199,9 @@ a {
 }
 
 .feature {
-  min-height: 206px;
+  max-height: 156px;
   padding-top: 50px;
+  padding-bottom: 52px;
   padding-left: 6%;
   padding-right: 6%;
   margin: 0;
@@ -212,7 +222,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  vertical-align: middle;
 }
 
 .pictured-feature {
@@ -254,6 +263,7 @@ a {
 .iconed-feature {
   min-height: 168px;
   padding-top: 163px;
+  padding-bottom: 0;
 }
 
 .motel-feature {
@@ -558,7 +568,7 @@ a {
 .social a {
   width: 46px;
   height: 48px;
-  margin-right: 6px;
+  margin-right: 5px;
   flex-shrink: 1;
   background-color: #81b3d2;
 }
@@ -618,7 +628,7 @@ a {
 .academy-logo {
   display: inline-block;
   width: 115px;
-  height: 41px;
+  height: 40px;
   background: url("../img/academy-logo.svg") no-repeat center;
 }
 
@@ -868,21 +878,23 @@ a {
 .sorting-wrapper {
   min-width: 528px;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
 }
 
-.sorting-wrapper h2 {
+.sorting-wrapper div:first-of-type {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
+  margin-right: 48px;
 }
 
 .sorting-wrapper div {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  margin-right: 35px;
 }
 
 .sorting-criteria {
