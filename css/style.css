@@ -182,6 +182,7 @@ a {
 }
 
 .features h3 {
+  width: 486px;
   padding: 0;
   margin: 0;
   margin-bottom: 27px;
@@ -201,7 +202,7 @@ a {
 .feature {
   max-height: 156px;
   padding-top: 50px;
-  padding-bottom: 52px;
+  padding-bottom: 50px;
   padding-left: 6%;
   padding-right: 6%;
   margin: 0;
@@ -215,13 +216,16 @@ a {
 }
 
 .numbered-feature .feature-title::after {
-  display: block;
+  display: inline-block;
   counter-increment: features;
   content: '— №' counter(features) ' —';
-  padding-top: 30px;
+  padding: 0;
+  margin: 0;
+  padding-top: 23px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  vertical-align: middle;
 }
 
 .pictured-feature {
@@ -233,11 +237,11 @@ a {
 }
 
 .pictured-feature-right {
-  padding-right: 72%;
+  padding-right: 73%;
 }
 
 .pictured-feature-left {
-  padding-left: 72%;
+  padding-left: 73%;
 }
 
 .pictured-feature .feature-description {
@@ -245,7 +249,7 @@ a {
 }
 
 .pictured-feature img {
-  width: 66%;
+  width: 67%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -279,11 +283,14 @@ a {
 }
 
 .feature-title {
+  display: inline-block;
+  width: 120px;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  vertical-align: middle;
 }
 
 .iconed-feature .feature-title {
@@ -348,6 +355,7 @@ a {
 }
 
 .form-field {
+  /*display: none;*/
   width: 458px;
   height: 285px;
   position: absolute;
@@ -358,20 +366,20 @@ a {
   background-color: #ffffff;
 }
 
-/*@keyframes open {
+@keyframes open {
   from {
-    transform: translateX(-1000px);
+    transform: translateY(-50%);
   }
 
   to {
-    transform: translateX(0);
+    transform: translateY(0%);
   }
-}*/
+}
 
 .form-field-hide {
-  display: none;
-  /*animation-name: open;
-  animation-duration: 1s;*/
+  display: block;
+  animation-name: open;
+  animation-duration: 1.5s;
 }
 
 .form-field p {
