@@ -2,16 +2,16 @@
     font-family: 'PT Sans';
     font-weight: 400;
 
-    src: local('PT Sans'), local('PTSans-Regular')
-    url('../fonts/web/ptsans.woff2') format('woff2');
+    src: local('PT Sans'), local('PTSans-Regular'),
+    url('../fonts/ptsans.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'PT Sans';
     font-weight: 700;
 
-    src: local('PT Sans'), local('PTSans-700')
-    url('../fonts/web/ptsans700.woff2') format('woff2');
+    src: local('PT Sans'), local('PTSans-Bold'),
+    url('../fonts/ptsansbold.woff2') format('woff2');
 }
 
 .visually-hidden {
