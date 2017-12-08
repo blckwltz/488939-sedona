@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -31,7 +34,7 @@
           <figure class="feature pictured-feature pictured-feature-right numbered-feature">
             <figcaption class="feature-title">Настоящий городок</figcaption>
             <p class="feature-description">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/town.jpg" alt="Фотография города" width="1600" height="800">
+            <img src="img/town.jpg" alt="Фотография города" width="800" height="400">
           </figure>
           <figure class="feature iconed-feature motel-feature">
             <figcaption class="feature-title">Жилье</figcaption>
@@ -48,7 +51,7 @@
           <figure class="feature pictured-feature pictured-feature-left numbered-feature">
             <figcaption class="feature-title">Там есть мост дьявола</figcaption>
             <p class="feature-description">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-            <img src="img/bridge.jpg" alt="Фотография моста дьявола" width="1600" height="800">
+            <img src="img/bridge.jpg" alt="Фотография моста дьявола" width="800" height="400">
           </figure>
           <figure class="feature numbered-feature">
             <figcaption class="feature-title">Небольшая площадь</figcaption>
@@ -111,6 +114,6 @@
         </section>
       </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
