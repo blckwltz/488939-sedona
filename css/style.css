@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-weight: 400;
 
-    src: local('PT Sans'), local('PTSans-Regular'),
-    url('../fonts/ptsans.woff2') format('woff2');
+    src: local("PT Sans"), local("PTSans-Regular"),
+    url("../fonts/ptsans.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
     font-weight: 700;
 
-    src: local('PT Sans'), local('PTSans-Bold'),
-    url('../fonts/ptsansbold.woff2') format('woff2');
+    src: local("PT Sans"), local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
 .visually-hidden {
@@ -40,7 +40,7 @@
 }
 
 body {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
@@ -166,7 +166,7 @@ a {
     color: rgba(0, 0, 0, .3);
 }
 
-.menu-item a:not([href$='.html']) {
+.menu-item a:not([href$=".html"]) {
     color: #766357;
 }
 
@@ -179,8 +179,8 @@ a {
     min-height: 508px;
 
     background-color: #abbac5;
-    background-image: url('../img/shape.png'),
-    url('../img/background.jpg');
+    background-image: url("../img/shape.png"),
+    url("../img/background.jpg");
     background-repeat: no-repeat,
     no-repeat;
     background-position: 0 bottom,
@@ -244,7 +244,7 @@ a {
     margin: 0;
     padding-top: 50px;
     padding-right: 6%;
-    padding-bottom: 50px;
+    padding-bottom: 54px;
     padding-left: 6%;
 
     -webkit-box-flex: 1;
@@ -271,7 +271,7 @@ a {
     padding: 0;
     padding-top: 23px;
 
-    content: '— №' counter(features) ' —';
+    content: "— №" counter(features) " —";
     counter-increment: features;
 }
 
@@ -293,10 +293,6 @@ a {
 
 .pictured-feature-left {
     padding-left: 72.67%;
-}
-
-.pictured-feature .feature-description {
-    color: #ffffff;
 }
 
 .pictured-feature img {
@@ -328,15 +324,15 @@ a {
 }
 
 .motel-feature {
-    background: url('../img/icon-1.svg') no-repeat center 60px;
+    background: url("../img/icon-1.svg") no-repeat center 60px;
 }
 
 .burger-feature {
-    background: url('../img/icon-2.svg') no-repeat center 60px;
+    background: url("../img/icon-2.svg") no-repeat center 62px;
 }
 
 .souvenir-feature {
-    background: url('../img/icon-3.svg') no-repeat center 60px;
+    background: url("../img/icon-3.svg") no-repeat center 57px;
 }
 
 .feature-title {
@@ -346,7 +342,7 @@ a {
 
     display: inline-block;
 
-    width: 150px;
+    width: 151px;
     margin-bottom: 18px;
     padding: 0;
 
@@ -357,8 +353,14 @@ a {
     margin-bottom: 20px;
 }
 
-.feature-description {
+.feature .feature-description {
+    line-height: 24px;
+
     color: #333333;
+}
+
+.pictured-feature .feature-description {
+    color: #ffffff;
 }
 
 .booking {
@@ -554,26 +556,26 @@ a {
     white-space: nowrap;
 }
 
-.form-field-label[for='date-in'] {
+.form-field-label[for="date-in"] {
     padding-right: 23px;
 }
 
-.form-field-label[for='date-out'] {
+.form-field-label[for="date-out"] {
     padding-right: 20px;
 }
 
-.form-field-label[for='adults'] {
+.form-field-label[for="adults"] {
     padding-right: 41px;
 }
 
-.form-field-label[for='children'] {
+.form-field-label[for="children"] {
     padding-right: 27px;
     padding-left: 53px;
 }
 
 
 .form-field-input {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
@@ -589,8 +591,8 @@ a {
     background-color: #f2f2f2;
 }
 
-.form-field-input[name='adults'],
-.form-field-input[name='children'] {
+.form-field-input[name="adults"],
+.form-field-input[name="children"] {
     width: 38px;
     height: 38px;
     padding: 0;
@@ -621,22 +623,22 @@ a {
 
     border: 0;
     border-radius: 0;
-    background: url('../img/calendar.svg') no-repeat center;
+    background: url("../img/calendar.svg") no-repeat center;
     background-color: #f2f2f2;
 }
 
 .calendar-button:hover {
-    background: url('../img/calendar-hover.svg') no-repeat center;
+    background: url("../img/calendar-hover.svg") no-repeat center;
     background-color: #f2f2f2;
 }
 
 .calendar-button:active {
-    background: url('../img/calendar-active.svg') no-repeat center;
+    background: url("../img/calendar-active.svg") no-repeat center;
     background-color: #f2f2f2;
 }
 
 .adjust-button {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -800,27 +802,27 @@ a {
 }
 
 .social-tw {
-    background: url('../img/tw-icon.svg') no-repeat center;
+    background: url("../img/tw-icon.svg") no-repeat center;
 }
 
 .social-fb {
-    background: url('../img/fb-icon.svg') no-repeat center;
+    background: url("../img/fb-icon.svg") no-repeat center;
 }
 
 .social-yt {
-    background: url('../img/yt-icon.svg') no-repeat center;
+    background: url("../img/yt-icon.svg") no-repeat center;
 }
 
 .social-tw:active {
-    background: url('../img/tw-icon-active.svg') no-repeat center;
+    background: url("../img/tw-icon-active.svg") no-repeat center;
 }
 
 .social-fb:active {
-    background: url('../img/fb-icon-active.svg') no-repeat center;
+    background: url("../img/fb-icon-active.svg") no-repeat center;
 }
 
 .social-yt:active {
-    background: url('../img/yt-icon-active.svg') no-repeat center;
+    background: url("../img/yt-icon-active.svg") no-repeat center;
 }
 
 .academy {
@@ -855,15 +857,15 @@ a {
     width: 115px;
     height: 40px;
 
-    background: url('../img/academy-logo.svg') no-repeat center;
+    background: url("../img/academy-logo.svg") no-repeat center;
 }
 
 .academy-logo:hover {
-    background: url('../img/academy-logo-hover.svg') no-repeat center;
+    background: url("../img/academy-logo-hover.svg") no-repeat center;
 }
 
 .academy-logo:active {
-    background: url('../img/academy-logo-active.svg') no-repeat center;
+    background: url("../img/academy-logo-active.svg") no-repeat center;
 }
 
 .booking-inner {
@@ -880,7 +882,7 @@ a {
     padding-bottom: 7px;
     padding-left: 6%;
 
-    background: url('../img/background-filter.jpg') no-repeat center;
+    background: url("../img/background-filter.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -900,6 +902,7 @@ a {
     display: flex;
 
     margin: 0;
+    margin-right: 20%;
     padding: 0;
 
     -ms-flex-preferred-size: 50%;
@@ -960,21 +963,21 @@ a {
     width: 27px;
     height: 27px;
 
-    content: '';
+    content: "";
 
-    background: url('../img/checkbox-off.svg') no-repeat;
+    background: url("../img/checkbox-off.svg") no-repeat;
 }
 
 .checkbox:checked + .checkbox-label::before {
-    background: url('../img/checkbox-on.svg') no-repeat;
+    background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .checkbox:disabled + .checkbox-label::before {
-    background: url('../img/checkbox-off-disabled.svg') no-repeat;
+    background: url("../img/checkbox-off-disabled.svg") no-repeat;
 }
 
 .checkbox:checked:disabled + .checkbox-label::before {
-    background: url('../img/checkbox-on-disabled.svg') no-repeat;
+    background: url("../img/checkbox-on-disabled.svg") no-repeat;
 }
 
 .form-field-filter {
@@ -1023,7 +1026,7 @@ a {
     width: 2px;
     height: 22px;
 
-    content: '';
+    content: "";
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1052,7 +1055,7 @@ a {
 }
 
 .price-controls input {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -1094,11 +1097,11 @@ a {
 
     cursor: pointer;
 
-    background: url('../img/filter-button.svg') no-repeat center;
+    background: url("../img/filter-button.svg") no-repeat center;
 }
 
 .range-toggle:hover {
-    background: url('../img/filter-button-hover.svg') no-repeat center;
+    background: url("../img/filter-button-hover.svg") no-repeat center;
 }
 
 .range-toggle-min {
@@ -1111,7 +1114,7 @@ a {
 }
 
 .form-field-filter button {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -1183,7 +1186,7 @@ a {
     border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-criteria:not([href='#']) {
+.price-criteria {
     color: #81b3d2;
     border: 0;
 }
@@ -1192,8 +1195,18 @@ a {
     color: #81b3d2;
 }
 
+.price-criteria:hover {
+    color: #81b3d2;
+    border: 0;
+}
+
 .sorting-criteria:active {
     color: #000000;
+    border: 0;
+}
+
+.price-criteria:active {
+    color: #81b3d2;
     border: 0;
 }
 
@@ -1220,31 +1233,31 @@ a {
 .arrow-up {
     margin-right: 12px;
 
-    background: url('../img/arrow-up.svg') no-repeat;
+    background: url("../img/arrow-up.svg") no-repeat;
 }
 
 .arrow-up:hover {
-    background: url('../img/arrow-up-hover.svg') no-repeat;
+    background: url("../img/arrow-up-hover.svg") no-repeat;
 }
 
 .arrow-up:active {
-    background: url('../img/arrow-up-active.svg') no-repeat;
+    background: url("../img/arrow-up-active.svg") no-repeat;
 }
 
 .arrow-down {
-    background: url('../img/arrow-down.svg') no-repeat;
+    background: url("../img/arrow-down.svg") no-repeat;
 }
 
 .arrow-down:hover {
-    background: url('../img/arrow-down-hover.svg') no-repeat;
+    background: url("../img/arrow-down-hover.svg") no-repeat;
 }
 
 .arrow-down:active {
-    background: url('../img/arrow-down-active.svg') no-repeat;
+    background: url("../img/arrow-down-active.svg") no-repeat;
 }
 
-.arrow:not([href='#']) {
-    background: url('../img/arrow-down-active.svg') no-repeat;
+.arrow:not([href="#"]) {
+    background: url("../img/arrow-down-active.svg") no-repeat;
 }
 
 .sorting-hotel {
@@ -1296,7 +1309,7 @@ a {
 .hotel-name {
     font-size: 21px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 22px;
 
     color: #000000;
 }
@@ -1315,7 +1328,7 @@ a {
     display: flex;
 
     width: 180px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1399,7 +1412,7 @@ a {
 }
 
 .stars {
-    background: url('../img/star.svg') space;
+    background: url("../img/star.svg") space;
 }
 
 .stars-1 {
