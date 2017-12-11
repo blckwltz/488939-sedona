@@ -240,9 +240,9 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding-top: 50px;
-  padding-right: 6%;
+  padding-right: 4.17%;
   padding-bottom: 54px;
-  padding-left: 6%;
+  padding-left: 4.17%;
 }
 
 .numbered-feature {
@@ -250,7 +250,7 @@ a {
 }
 
 .numbered-feature .feature-title::after {
-  content: "— №" counter(features) " —";
+  content: "– №" counter(features) " –";
 
   display: block;
   margin: 0;
@@ -279,11 +279,11 @@ a {
 }
 
 .pictured-feature-right {
-  padding-right: 72.67%;
+  padding-right: 70.83%;
 }
 
 .pictured-feature-left {
-  padding-left: 72.67%;
+  padding-left: 70.83%;
 }
 
 .pictured-feature img {
@@ -352,7 +352,7 @@ a {
 
 .feature-title {
   display: inline-block;
-  width: 151px;
+  width: 150px;
   margin-bottom: 18px;
   padding: 0;
 
