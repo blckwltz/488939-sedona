@@ -5,9 +5,6 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="css/style-min.css" rel="stylesheet">
-    <script>
-      document.documentElement.classList.remove("no-js");
-    </script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -24,7 +21,7 @@
       </header>
       <main class="inner">
         <section class="booking-inner">
-          <h2 class="visually-hidden">Выбор гостиницы</h2>
+          <h1 class="visually-hidden">Выбор гостиницы</h1>
           <form class="form-field-inner" method="get" action="https://echo.htmlacademy.ru/">
             <div class="form-field-set-wrapper">
               <fieldset class="form-field-set">
@@ -82,15 +79,15 @@
           </form>
         </section>
         <section class="results">
-          <h2 class="visually-hidden">Результаты поиска</h2>
+          <h1 class="visually-hidden">Результаты поиска</h1>
           <section class="sorting">
-            <div class="sorting-wrapper">
-              <div>Найдено: 3</div>
-              <div>Сортировка:</div>
-              <div><a class="sorting-criteria price-criteria">По цене</a></div>
-              <div><a href="#" class="sorting-criteria">По типу</a></div>
-              <div><a href="#" class="sorting-criteria">По рейтингу</a></div>
-            </div>
+            <ul class="sorting-criteria">
+              <li>Найдено: 3</li>
+              <li>Сортировка:</li>
+              <li><a class="sorting-criterion price-criterion">По цене</a></li>
+              <li><a href="#" class="sorting-criterion type-criterion">По типу</a></li>
+              <li><a href="#" class="sorting-criterion rating-criteion">По рейтингу</a></li>
+            </ul>
             <div class="sorting-navigation">
               <a class="arrow arrow-up hide-text" href="#">По возрастанию</a>
               <a class="arrow arrow-down hide-text">По убыванию</a>
@@ -101,14 +98,14 @@
           <article class="sorting-hotel">
             <img src="img/amara.jpg" alt="Amara Resort and Spa" width="135" height="90">
             <div class="hotel-info">
-              <span><a href="" class="hotel-name">Amara Resort &amp; Spa</a></span>
+              <h3><a href="#" class="hotel-name">Amara Resort &amp; Spa</a></h3>
               <div class="hotel-type">
                 <span>Гостиница</span>
                 <span>От 4000 р.</span>
               </div>
               <div class="hotel-actions">
-                <a href="" class="hotel-details">Подробнее</a>
-                <a href="" class="hotel-get">Забронировать</a>
+                <a href="#" class="hotel-details">Подробнее</a>
+                <a href="#" class="hotel-get">Забронировать</a>
               </div>
             </div>
             <div class="hotel-rating">
@@ -119,14 +116,14 @@
           <article class="sorting-hotel">
             <img src="img/quail.jpg" alt="Desert Quail Inn" width="135" height="90">
             <div class="hotel-info">
-              <span><a href="" class="hotel-name">Desert Quail Inn</a></span>
+              <h3><a href="#" class="hotel-name">Desert Quail Inn</a></h3>
               <div class="hotel-type">
                 <span>Мотель</span>
                 <span>От 3000 р.</span>
               </div>
               <div class="hotel-actions">
-                <a href="" class="hotel-details">Подробнее</a>
-                <a href="" class="hotel-get">Забронировать</a>
+                <a href="#" class="hotel-details">Подробнее</a>
+                <a href="#" class="hotel-get">Забронировать</a>
               </div>
             </div>
             <div class="hotel-rating">
@@ -137,14 +134,14 @@
           <article class="sorting-hotel">
             <img src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
             <div class="hotel-info">
-              <span><a href="" class="hotel-name">Villas at Poco Diablo</a></span>
+              <h3><a href="#" class="hotel-name">Villas at Poco Diablo</a></h3>
               <div class="hotel-type">
                 <span>Апартаменты</span>
                 <span>От 2000 р.</span>
               </div>
               <div class="hotel-actions">
-                <a href="" class="hotel-details">Подробнее</a>
-                <a href="" class="hotel-get">Забронировать</a>
+                <a href="#" class="hotel-details">Подробнее</a>
+                <a href="#" class="hotel-get">Забронировать</a>
               </div>
             </div>
             <div class="hotel-rating">
@@ -159,9 +156,9 @@
           <span>#visitsedona</span>
         </section>
         <section class="social">
-          <a href="" class="social-tw hide-text">Twitter</a>
-          <a href="" class="social-fb hide-text">Facebook</a>
-          <a href="" class="social-yt hide-text">Youtube</a>
+          <a href="#" class="social-tw hide-text">Twitter</a>
+          <a href="#" class="social-fb hide-text">Facebook</a>
+          <a href="#" class="social-yt hide-text">Youtube</a>
         </section>
         <section class="academy">
           <p class="academy-link">website by</p>
@@ -169,6 +166,9 @@
         </section>
       </footer>
     </div>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
     <script src="js/script-min.js"></script>
   </body>
 </html>

@@ -5,9 +5,6 @@
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style-min.css" rel="stylesheet">
-    <script>
-      document.documentElement.classList.remove("no-js");
-    </script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -24,11 +21,13 @@
       </header>
       <main>
         <section class="photo">
+          <h1 class="visually-hidden">Фото каньонов Седоны</h1>
           <img src="img/main-text.png" alt="Sedona" width="458" height="352">
         </section>
         <section class="features">
+          <h1 class="visually-hidden">Преимущества Седоны</h1>
           <div>
-            <h3>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h3>
+            <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
           <figure class="feature pictured-feature pictured-feature-right numbered-feature">
@@ -49,7 +48,7 @@
             <p class="feature-description">Не только китайского, но и местного производства!</p>
           </figure>
           <figure class="feature pictured-feature pictured-feature-left numbered-feature">
-            <figcaption class="feature-title">Там есть мост дьявола</figcaption>
+          <figcaption class="feature-title">Там есть мост дьявола</figcaption>
             <p class="feature-description">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
             <img src="img/bridge.jpg" alt="Фотография моста дьявола" width="800" height="400">
           </figure>
@@ -67,7 +66,8 @@
           </figure>
         </section>
         <section class="booking">
-          <h2>Заинтересовались?</h2>
+          <h1 class="visually-hidden">Выбор гостиницы в Седоне</h1>
+          <p>Заинтересовались?</p>
           <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           <a href="find-hotel.html"><span class="find-hotel">Поиск гостиницы в Седоне</span></a>
           <form class="form-field" method="get" action="https://echo.htmlacademy.ru/">
@@ -95,6 +95,7 @@
           </form>
         </section>
         <section class="map">
+          <h1 class="visually-hidden">Расположение города</h1>
           <iframe class="map-interactive" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d52375.39762130045!2d-111.79600912055851!3d34.86973448004563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2zU2Vkb25hLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!3m2!1d34.8697395!2d-111.7609896!5e0!3m2!1sru!2sru!4v1512069319301" width="1280" height="747" style="border:0" allowfullscreen></iframe>
           <img src="img/map.jpg" alt="Map" width="1280" height="747">
         </section>
@@ -114,6 +115,9 @@
         </section>
       </footer>
     </div>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
     <script src="js/script-min.js"></script>
   </body>
 </html>
