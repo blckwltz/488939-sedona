@@ -236,7 +236,7 @@ a {
 }
 
 .feature {
-  flex-basis: 33.33%;
+  width: 33.33%;
   box-sizing: border-box;
   margin: 0;
   padding-top: 50px;
@@ -462,12 +462,13 @@ a {
 .no-js .form-field {
   position: absolute;
   top: 100%;
+  left: 0;
+  right: 0;
   z-index: 1;
 
   display: block;
   width: 458px;
   height: 285px;
-  margin: auto;
   padding: 55px;
 
   background-color: #ffffff;
@@ -481,7 +482,7 @@ a {
   display: none;
   width: 458px;
   height: 285px;
-  margin: auto;
+  margin: 0 auto;
   padding: 55px;
 
   background-color: #ffffff;
@@ -660,22 +661,41 @@ a {
   color: #a9a9a9;
   text-transform: uppercase;
 
-  background-color: #f2f2f2;
   border: 0;
   border-radius: 0;
   cursor: pointer;
 }
 
-.adjust-button:hover {
-  color: #000000;
+.minus-button {
+  background: #f2f2f2 url("../img/minus-icon.png") no-repeat center;
 }
 
-.adjust-button:active {
-  color: #81b3d2;
+.minus-button:hover {
+  background: #f2f2f2 url("../img/minus-icon-hover.png") no-repeat center;
 }
 
-.adjust-button:focus {
-  color: #81b3d2;
+.minus-button:active {
+  background: #f2f2f2 url("../img/minus-icon-active.png") no-repeat center;
+}
+
+.minus-button:focus {
+  background: #f2f2f2 url("../img/minus-icon-active.png") no-repeat center;
+}
+
+.plus-button {
+  background: #f2f2f2 url("../img/plus-icon.png") no-repeat center;
+}
+
+.plus-button:hover {
+  background: #f2f2f2 url("../img/plus-icon-hover.png") no-repeat center;
+}
+
+.plus-button:active {
+  background: #f2f2f2 url("../img/plus-icon-active.png") no-repeat center;
+}
+
+.plus-button:focus {
+  background: #f2f2f2 url("../img/plus-icon-active.png") no-repeat center;
 }
 
 .form-field-button {
@@ -1332,7 +1352,7 @@ a {
   display: flex;
   padding-top: 28px;
   padding-right: 6%;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   padding-left: 6%;
 
   border-top: 1px solid #e5e5e5;
