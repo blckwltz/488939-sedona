@@ -279,13 +279,13 @@ a {
 }
 
 .pictured-feature-right {
-  padding-left: 4%;
+  padding-left: 3.99%;
   padding-right: 70.83%;
 }
 
 .pictured-feature-left {
   padding-left: 70.83%;
-  padding-right: 4%;
+  padding-right: 3.99%;
 }
 
 .pictured-feature img {
@@ -314,9 +314,9 @@ a {
   position: relative;
 
   padding-top: 163px;
-  padding-left: 4%;
+  padding-left: 3.99%;
   padding-bottom: 79px;
-  padding-right: 4%;
+  padding-right: 3.99%;
 }
 
 .iconed-feature::before {
@@ -356,7 +356,7 @@ a {
 
 .feature-title {
   display: inline-block;
-  width: 150px;
+  width: 151px;
   margin-bottom: 18px;
   padding: 0;
 
@@ -746,22 +746,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   min-height: 120px;
 
   background-color: rgba(249, 251, 246, 0.9);
-
-  -webkit-box-align: center;
-  -ms-flex-align: center;
 }
 
 .main-footer section {
-  flex-basis: 33%;
+  flex-basis: 33.33%;
 
-  -ms-flex-preferred-size: 33%;
+  -ms-flex-preferred-size: 33.33%;
 }
 
 .visit {
@@ -769,6 +765,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
+  padding-top: 48px;
   padding-left: 2px;
 
   font-weight: 700;
@@ -786,6 +783,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
+  padding-top: 37px;
   padding-left: 3px;
 
   list-style: none;
@@ -863,18 +861,16 @@ a {
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 0;
   padding-left: 6px;
 
-  -webkit-box-align: center;
   -webkit-box-pack: center;
-  -ms-flex-align: center;
   -ms-flex-pack: center;
 }
 
 .academy-link {
   display: inline-block;
+  padding-top: 34px;
   margin-right: 8px;
 
   font-weight: 400;
@@ -886,6 +882,7 @@ a {
   display: inline-block;
   width: 115px;
   height: 40px;
+  padding-top: 79px;
 
   background: url("../img/academy-logo.svg") no-repeat center;
 }
